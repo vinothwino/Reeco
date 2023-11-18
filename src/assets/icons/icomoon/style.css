@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dv8kka');
+  src:  url('fonts/icomoon.eot?dv8kka#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dv8kka') format('truetype'),
+    url('fonts/icomoon.woff?dv8kka') format('woff'),
+    url('fonts/icomoon.svg?dv8kka#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e904";
+}
+.icon-shopping-cart:before {
+  content: "\e902";
+}
+.icon-printer:before {
+  content: "\e903";
+}
+.icon-set_meal:before {
+  content: "\e905";
+}
+.icon-lunch_dining:before {
+  content: "\e906";
+}
+.icon-dinner_dining:before {
+  content: "\e907";
+}
+.icon-emoji_food_beverage:before {
+  content: "\e908";
+}
+.icon-restaurant:before {
+  content: "\e909";
+}
+.icon-check:before {
+  content: "\e900";
+}
+.icon-clear:before {
+  content: "\e901";
+}
+.icon-close:before {
+  content: "\e901";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-snowflake-o:before {
+  content: "\f2dc";
+}
