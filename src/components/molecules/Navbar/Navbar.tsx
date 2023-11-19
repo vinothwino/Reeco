@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
                     </Navs>
                 </Styled.NavbarCollape>
                 <Styled.ProfileSection>
-                    <IconButtonFloatingBadge iconName="shopping-cart" badgeLabel="12" />
+                    <IconButtonFloatingBadge iconName="shopping-cart" iconColor="white" badgeLabel="12" />
                     <Styled.ProfileDropdown label='Hello James' />
                 </Styled.ProfileSection>
             </Container>

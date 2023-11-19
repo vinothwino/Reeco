@@ -6,7 +6,11 @@ const Button = styled.button`
   border:0;
   font-weight: 600;
   font-size: 0.875rem;
-  cursor: pointer
+  cursor: pointer;
+  &:disabled{
+    opacity: .65;
+    pointer-events:none;
+  }
 `;
 
 const PrimaryButton = styled(Button)`

@@ -1,4 +1,4 @@
-type Props = {
+export type Props = {
     iconName: string,
     iconPrefix?: string,
     className?: string,

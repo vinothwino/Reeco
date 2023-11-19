@@ -25,6 +25,15 @@ const GlobalStyle = createGlobalStyle`
     .justify-between{
         justify-content:space-between;
     }
+    .justify-end{
+        justify-content:flex-end;
+    }
+    .flex-column{
+        flex-direction: column;
+    }
+    .w-100{
+        width:100%;
+    }
 `;
 
 export default GlobalStyle

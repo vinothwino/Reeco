@@ -4,8 +4,6 @@ import OrderDetails from './components/templates/OrderDetails';
 import reportWebVitals from './reportWebVitals';
 import { store } from './store/index';
 import { Provider } from 'react-redux';
-import { ApiProvider } from '@reduxjs/toolkit/query/react'
-import { appApi } from './services/app'
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './assets/theme/globalStyles';
 import { theme } from './assets/theme/theme';
@@ -27,20 +25,18 @@ async function enableMocking() {
   return worker.start()
 }
 
-// enableMocking().then(() => {
-root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ApiProvider api={appApi}>
+enableMocking().then(() => {
+  root.render(
+    <React.StrictMode>
+      <Provider store={store}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
           <OrderDetails />
         </ThemeProvider>
-      </ApiProvider>
-    </Provider>
-  </React.StrictMode>
-);
-// })
+      </Provider>
+    </React.StrictMode>
+  );
+})
 
 
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Container from '../../atoms/Container/Container';
 
 const InfoWrapper = styled.div`
   display: flex;
@@ -7,6 +8,10 @@ const InfoWrapper = styled.div`
   @media screen and (min-width: 1024px){
     flex-direction: row
   }
+`;
+
+const InfoContainer = styled(Container)`
+  margin-bottom: 1.5rem;
 `;
 
 const InfoGroup = styled.div`
@@ -41,4 +46,4 @@ const InfoGroupSeperator = styled.hr`
   border-color: #9d9d9d30;
 `;
 
-export { InfoWrapper, InfoGroup, InfoLabel, InfoValue, InfoGroupSeperator }
+export { InfoContainer, InfoWrapper, InfoGroup, InfoLabel, InfoValue, InfoGroupSeperator }

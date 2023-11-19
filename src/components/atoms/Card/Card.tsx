@@ -2,13 +2,15 @@ import React from 'react'
 import * as Styled from './Card.styled';
 
 type Props = {
-    children: any
+    children: any,
+    className?: string
 }
 
 const Card = (props: Props) => {
-    const { children } = props;
+    const { children, className } = props;
+
     return (
-        <Styled.Card>
+        <Styled.Card className={className}>
             <Styled.CardBody>
                 {children}
             </Styled.CardBody>

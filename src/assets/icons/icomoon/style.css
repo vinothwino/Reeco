@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?dv8kka');
-  src:  url('fonts/icomoon.eot?dv8kka#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?dv8kka') format('truetype'),
-    url('fonts/icomoon.woff?dv8kka') format('woff'),
-    url('fonts/icomoon.svg?dv8kka#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?51cop9');
+  src:  url('fonts/icomoon.eot?51cop9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?51cop9') format('truetype'),
+    url('fonts/icomoon.woff?51cop9') format('woff'),
+    url('fonts/icomoon.svg?51cop9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,6 +34,12 @@
 .icon-printer:before {
   content: "\e903";
 }
+.icon-minus:before {
+  content: "\e90a";
+}
+.icon-plus:before {
+  content: "\e90b";
+}
 .icon-set_meal:before {
   content: "\e905";
 }
@@ -52,11 +58,20 @@
 .icon-check:before {
   content: "\e900";
 }
-.icon-clear:before {
-  content: "\e901";
-}
 .icon-close:before {
   content: "\e901";
+}
+.icon-plus-dark:before {
+  content: "\f067";
+}
+.icon-minus-dark:before {
+  content: "\f068";
+}
+.icon-check-dark:before {
+  content: "\f00c";
+}
+.icon-close-dark:before {
+  content: "\f00d";
 }
 .icon-angle-left:before {
   content: "\f104";

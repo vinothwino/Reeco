@@ -5,7 +5,22 @@ export const IconButton = styled.button`
   border:0;
   background-color: transparent;
   font-size:1.5rem;
-  color: ${({ theme }) => theme.colors.white};
+  color: inherit;
   cursor: pointer;
-  padding: 0
+  padding: 0;
+  &.color-primary{
+    color: ${({ theme }) => theme.colors.primary};
+  }
+  &.color-secondary{
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+  &.color-white{
+    color: ${({ theme }) => theme.colors.white};
+  }
+  &.color-success{
+    color: ${({ theme }) => theme.colors.success};
+  }
+  &.color-danger{
+    color: ${({ theme }) => theme.colors.danger};
+  }
 `;

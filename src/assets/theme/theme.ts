@@ -6,6 +6,10 @@ export const theme = {
         bodyBg: '#fbfbfb',
         lightGreen: '#3dc971',
         lightGrey: '#9d9d9d',
-        white: '#fff'
+        white: '#fff',
+        lightGrey2: 'gainsboro',
+        danger: '#db2114',
+        success: '#3dca72',
+        orange: '#f66d44'
     }
 }

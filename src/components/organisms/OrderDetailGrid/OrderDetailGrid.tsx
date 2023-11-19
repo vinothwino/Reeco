@@ -1,26 +1,20 @@
 import React from 'react'
 import _map from 'lodash/map';
 import Card from '../../atoms/Card'
-import { Container } from '../../atoms/Container/Container.styled'
 import * as Styled from './OrderDetailGrid.styled';
+import { useSelector } from 'react-redux';
+import { OrderDetailsState } from '../../../store/features/orderDetails';
 
 type Props = {}
 
 interface RenderInfoGroup {
     label: string,
-    value: string
-}
-
-const ORDER_DETAILS = {
-    supplierName: 'East coast fruits & vegetables',
-    shippingDate: 'Thu, Feb 10',
-    total: '$ 15,028.3',
-    category: '-',
-    department: '300-444-678',
-    status: 'Awaiting your approval'
+    value: string | number | null
 }
 
 const OrderDetailGrid = (props: Props) => {
+    const order = useSelector((state: OrderDetailsState) => state.order);
+
     const renderInfoGroup = ({ label, value }: RenderInfoGroup) => (
         <>
             <Styled.InfoGroup>
@@ -33,27 +27,27 @@ const OrderDetailGrid = (props: Props) => {
     const orderStatusList: RenderInfoGroup[] = [
         {
             label: 'Supplier',
-            value: ORDER_DETAILS.supplierName
+            value: order.supplierName
         },
         {
             label: 'Shipping date',
-            value: ORDER_DETAILS.shippingDate
+            value: order.shippingDate
         },
         {
             label: 'Total',
-            value: ORDER_DETAILS.total
+            value: order.total
         },
         {
             label: 'Category',
-            value: ORDER_DETAILS.category
+            value: order.category
         },
         {
             label: 'Department',
-            value: ORDER_DETAILS.department
+            value: order.department
         },
         {
             label: 'Status',
-            value: ORDER_DETAILS.status
+            value: order.status
         }
     ]
 
@@ -67,13 +61,13 @@ const OrderDetailGrid = (props: Props) => {
     ));
 
     return (
-        <Container>
+        <Styled.InfoContainer>
             <Card>
                 <Styled.InfoWrapper>
                     {renderOrderDetailsStatus()}
                 </Styled.InfoWrapper>
             </Card>
-        </Container>
+        </Styled.InfoContainer>
     )
 }
 
