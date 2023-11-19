@@ -29,7 +29,7 @@ const EditProductModal = (props: Props) => {
     useEffect(() => {
         if (isOpen && product) {
             setPrice(product.updatedPrice || product.price)
-            setQuantity(product.updatedQuantity || product.updatedQuantity);
+            setQuantity(product.updatedQuantity || product.quantity || 0);
             setTotal(product.updatedTotal || product.total);
         }
     }, [isOpen, product])
@@ -79,7 +79,7 @@ const EditProductModal = (props: Props) => {
                         <Styled.FormGroup className='d-flex'>
                             <Styled.Formlabel>Quantity</Styled.Formlabel>
                             <div className='d-flex'>
-                                <Styled.QuantityBtn disabled={quantity !== 0} onClick={() => setQuantity(quantity => quantity - 1)}>
+                                <Styled.QuantityBtn disabled={quantity === 0} onClick={() => setQuantity(quantity => quantity - 1)}>
                                     <FontIcon iconName="minus" />
                                 </Styled.QuantityBtn>
                                 <Styled.FormInput

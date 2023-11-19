@@ -24,7 +24,7 @@ const PRODUCT_DETAIL_SAMPLE = {
     quantity: 1,
     updatedQuantity: null,
     status: 0,
-    total: 6000,
+    total: 60,
     updatedTotal: null
 }
 
