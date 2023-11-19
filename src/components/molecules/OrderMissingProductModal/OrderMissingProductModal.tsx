@@ -1,7 +1,6 @@
 import React from 'react'
 import Modal from '../../atoms/Modal'
 import IconButton from '../../atoms/IconButton'
-import Button from '../../atoms/Button'
 import * as Styled from './OrderMissingProductModal.styled';
 import LinkButton from '../../atoms/LinkButton';
 

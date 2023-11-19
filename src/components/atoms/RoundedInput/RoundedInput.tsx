@@ -1,4 +1,4 @@
-import React, { SyntheticEvent } from 'react'
+import React from 'react'
 import * as Styled from './RoundedInput.styled';
 import { FontIconProps } from '../FontIcon';
 

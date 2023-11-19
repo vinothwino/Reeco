@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import type { Dispatch, PayloadAction } from '@reduxjs/toolkit'
+import type { PayloadAction } from '@reduxjs/toolkit'
 import { fetchOrderDetails } from '../../services/orders.service';
 import { ORDER_STATUS } from '../../constants/order.constants';
 
@@ -75,9 +75,7 @@ export const orderDetailsSlice = createSlice({
             state.isLoading = true
         },
         setOrderDetails: (state, action: PayloadAction<OrderState>) => {
-            state.order = action.payload
-        },
-        orderDetailsLoaded: (state) => {
+            state.order = action.payload;
             state.isLoading = false
         },
         changeProductStatus: (state, action: PayloadAction<ChangeProductStatus>) => {
@@ -110,12 +108,12 @@ export const orderDetailsSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { orderDetailsLoading, setOrderDetails, orderDetailsLoaded, changeProductStatus, editProductDetails } = orderDetailsSlice.actions;
+export const { orderDetailsLoading, setOrderDetails, changeProductStatus, editProductDetails } = orderDetailsSlice.actions;
 
 const fetchOrderDetailsById: any = (userId: number) => async (dispatch: any) => {
     dispatch(orderDetailsLoading())
     const response: any = await fetchOrderDetails(userId)
-    console.log(response)
+
     dispatch(setOrderDetails(response.data))
 }
 

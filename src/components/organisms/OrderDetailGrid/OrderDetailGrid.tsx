@@ -52,12 +52,12 @@ const OrderDetailGrid = (props: Props) => {
     ]
 
     const renderOrderDetailsStatus = () => _map(orderStatusList, (data: RenderInfoGroup, index: number) => (
-        <>
+        <React.Fragment key={index}>
             {renderInfoGroup(data)}
             {index !== orderStatusList.length - 1 && (
                 <Styled.InfoGroupSeperator />
             )}
-        </>
+        </React.Fragment>
     ));
 
     return (

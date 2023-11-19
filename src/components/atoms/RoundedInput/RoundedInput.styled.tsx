@@ -17,6 +17,7 @@ const InputIcon = styled(FontIcon)`
   right:20px;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 1.2rem;
   color: ${({ theme }) => theme.colors.lightGrey};
 `;
 

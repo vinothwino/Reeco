@@ -6,12 +6,11 @@ import IconButton from '../../atoms/IconButton';
 import OrderProductTable from '../../molecules/OrderProductTable';
 import OrderMissingProductModal from '../../molecules/OrderMissingProductModal';
 import { useDispatch, useSelector } from 'react-redux';
-import { EditProductDetail, OrderDetailsState, changeProductStatus, editProductDetails } from '../../../store/features/orderDetails';
+import { OrderDetailsState, changeProductStatus, editProductDetails } from '../../../store/features/orderDetails';
 import { ORDER_STATUS } from '../../../constants/order.constants';
 import { Dispatch } from '@reduxjs/toolkit';
 import EditProductModal from '../../molecules/EditProductModal';
 import { HandleEditSubmitArg } from '../../molecules/EditProductModal/EditProductModal';
-import RoundedInput from '../../atoms/RoundedInput';
 
 type Props = {}
 

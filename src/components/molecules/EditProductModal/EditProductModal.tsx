@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import _map from 'lodash/map'
-import Modal from '../../atoms/Modal'
 import IconButton from '../../atoms/IconButton'
 import Button from '../../atoms/Button'
 import * as Styled from './EditProductModal.styled';
@@ -31,6 +30,7 @@ const EditProductModal = (props: Props) => {
             setPrice(product.updatedPrice || product.price)
             setQuantity(product.updatedQuantity || product.quantity || 0);
             setTotal(product.updatedTotal || product.total);
+            setReason(product.reasonForChange);
         }
     }, [isOpen, product])
 
