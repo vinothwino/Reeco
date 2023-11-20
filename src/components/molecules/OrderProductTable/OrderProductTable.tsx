@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import IconButton from '../../atoms/IconButton'
 import Button from '../../atoms/Button'
 import { OrderedProductDataState } from '../../../store/features/orderDetails'
@@ -120,4 +120,4 @@ const OrderProductTable = (props: Props) => {
     )
 }
 
-export default OrderProductTable
+export default memo(OrderProductTable)

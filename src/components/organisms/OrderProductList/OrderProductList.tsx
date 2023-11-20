@@ -59,6 +59,14 @@ const OrderProductList = (props: Props) => {
         }
     }, [dispatch, selectedProductId])
 
+    const filteredList = useMemo(
+        () => orderedProductList.filter(
+            product => (
+                (search && product.productName.toLowerCase().includes(search.toLowerCase()))
+                || !search)
+        ),
+        [orderedProductList, search])
+
     return (
         <Container>
             <Styled.OrderCard>
@@ -77,7 +85,7 @@ const OrderProductList = (props: Props) => {
                     </Styled.OrderFilterButtonGroup>
                 </Styled.OrderFilterWrapper>
                 <OrderProductTable
-                    list={orderedProductList}
+                    list={filteredList}
                     handleApproveProduct={handleApproveProduct}
                     handleEditProduct={handleEditProduct}
                     handleMissingProduct={handleMissingProduct}
