@@ -10,6 +10,7 @@ const Input = styled.input`
     border: 1px solid ${({ theme }) => theme.colors.lightGrey2};
     padding: 0.8rem 1rem;
     border-radius: 1.25rem;
+    outline:0;
 `;
 
 const InputIcon = styled(FontIcon)`
@@ -18,6 +19,7 @@ const InputIcon = styled(FontIcon)`
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.2rem;
+  z-index:0;
   color: ${({ theme }) => theme.colors.lightGrey};
 `;
 
