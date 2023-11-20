@@ -43,7 +43,7 @@ const OrderProductList = (props: Props) => {
     }, [])
 
     const selectedProduct = useMemo(
-        () => orderedProductList.find(product => product.productId === selectedProductId || 1),
+        () => orderedProductList.find(product => product.productId === selectedProductId),
         [selectedProductId, orderedProductList]
     );
 
