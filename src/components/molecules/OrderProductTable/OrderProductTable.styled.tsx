@@ -38,19 +38,19 @@ const TableData = styled.td`
     line-height: 1.4;
 
     &:nth-child(2){
-        min-width: 200px
+        min-width: 220px
     }
     &:nth-child(3){
-        min-width: 150px
+        min-width: 140px
     }
     &:nth-child(4){
-        min-width: 200px
+        min-width: 140px
     }
     &:nth-child(5){
         min-width: 150px
     }
     &:nth-child(7){
-        min-width: 200px;
+        min-width: 170px;
         text-align:center;
         background-color:${({ theme }) => theme.colors.bodyBg};
     }
